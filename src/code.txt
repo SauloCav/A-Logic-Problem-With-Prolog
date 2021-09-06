@@ -1,0 +1,301 @@
+main :-
+    modelo([A1,A2,A3,A4,A5]),
+    imprime_lista([A1,A2,A3,A4,A5]),
+	fail.
+
+main :-
+    true.
+
+modelo([
+       (Nome_bloco_1, Detalhes_1, Arquiteto_1, Idade_1, Vendido_1, Tem_1),
+       (Nome_bloco_2, Detalhes_2, Arquiteto_2, Idade_2, Vendido_2, Tem_2),
+       (Nome_bloco_3, Detalhes_3, Arquiteto_3, Idade_3, Vendido_3, Tem_3),
+       (Nome_bloco_4, Detalhes_4, Arquiteto_4, Idade_4, Vendido_4, Tem_4),
+       (Nome_bloco_5, Detalhes_5, Arquiteto_5, Idade_5, Vendido_5, Tem_5) 
+       ]) :-
+    
+    %Nome dos Blocos
+    nome_bloco(Nome_bloco_1),
+    nome_bloco(Nome_bloco_2),
+    nome_bloco(Nome_bloco_3),
+    nome_bloco(Nome_bloco_4),
+    nome_bloco(Nome_bloco_5),
+    
+    %Na terceira posição está o bloco Tesla
+    (Nome_bloco_3==tesla),
+    
+    %O bloco Gauss está em uma das pontas
+    (
+    (Nome_bloco_1==gauss);
+    (Nome_bloco_5==gauss)
+    ),
+    
+    %O bloco Tesla está exatamente à esquerda do bloco Pascal
+    (
+    (Nome_bloco_1==tesla, Nome_bloco_2==pascal);
+    (Nome_bloco_2==tesla, Nome_bloco_3==pascal);
+    (Nome_bloco_3==tesla, Nome_bloco_4==pascal);
+    (Nome_bloco_4==tesla, Nome_bloco_5==pascal)
+    ),
+    
+    alldifferent([Nome_bloco_1, Nome_bloco_2, Nome_bloco_3, Nome_bloco_4, Nome_bloco_5]),
+    
+    %Detalhes
+    detalhes(Detalhes_1),
+    detalhes(Detalhes_2),
+    detalhes(Detalhes_3),
+    detalhes(Detalhes_4),
+    detalhes(Detalhes_5),
+    
+    %O bloco Gauss está em algum lugar à direita do prédio que tem detalhes em Vermelho
+    (
+    (Detalhes_1 == vermelho, (Nome_bloco_2 == gauss ; Nome_bloco_3 == gauss ; Nome_bloco_4 == gauss ; Nome_bloco_5 == gauss));
+    (Detalhes_2 == vermelho, (Nome_bloco_3 == gauss ; Nome_bloco_4 == gauss ; Nome_bloco_5 == gauss));
+    (Detalhes_3 == vermelho, (Nome_bloco_4 == gauss ; Nome_bloco_5 == gauss));
+    (Detalhes_4 == vermelho, (Nome_bloco_5 == gauss))
+    ),
+    
+    alldifferent([Detalhes_1, Detalhes_2, Detalhes_3, Detalhes_4, Detalhes_5]),
+    
+    %Arquiteto
+    arquiteto(Arquiteto_1),
+    arquiteto(Arquiteto_2),
+    arquiteto(Arquiteto_3),
+    arquiteto(Arquiteto_4),
+    arquiteto(Arquiteto_5),
+    
+    %Willian está trabalhando no quinto prédio
+    (Arquiteto_5 == willian),
+    
+    %O bloco Newton fica ao lado do bloco projetado por Sérgio
+    (
+    (Nome_bloco_1 == newton, Arquiteto_2 == sergio);
+    (Nome_bloco_2 == newton, (Arquiteto_1 == sergio ; Arquiteto_3 == sergio));
+    (Nome_bloco_3 == newton, (Arquiteto_2 == sergio ; Arquiteto_4 == sergio));
+    (Nome_bloco_4 == newton, (Arquiteto_3 == sergio ; Arquiteto_5 == sergio));
+    (Nome_bloco_5 == newton, Arquiteto_4 == sergio)
+    ),
+    
+    %O bloco que possui detalhes em Branco está exatamente à esquerda do que é projetado pelo Eduardo
+    (
+    (Detalhes_1 == branco, Arquiteto_2 == eduardo);
+    (Detalhes_2 == branco, Arquiteto_3 == eduardo);
+    (Detalhes_3 == branco, Arquiteto_4 == eduardo);
+    (Detalhes_4 == branco, Arquiteto_5 == eduardo)
+    ),
+    
+    %Fábio é o responsável pelo projeto do prédio com detalhes em Branco
+    (
+    (Arquiteto_1 == fabio, Detalhes_1 == branco);
+    (Arquiteto_2 == fabio, Detalhes_2 == branco);
+    (Arquiteto_3 == fabio, Detalhes_3 == branco);
+    (Arquiteto_4 == fabio, Detalhes_4 == branco);
+    (Arquiteto_5 == fabio, Detalhes_5 == branco)
+    ),
+    
+    alldifferent([Arquiteto_1, Arquiteto_2, Arquiteto_3, Arquiteto_4, Arquiteto_5]),
+    
+    %Idade
+    idade(Idade_1),
+    idade(Idade_2),
+    idade(Idade_3),
+    idade(Idade_4),
+    idade(Idade_5),
+    
+    %O arquiteto de 51 anos está trabalhando no bloco de uma das pontas
+    (
+    (Idade_1 == i51);
+    (Idade_5 == i51)
+    ),
+    
+    %O prédio do arquiteto de 56 anos está exatamente à esquerda do prédio do arquiteto de 45 anos
+    (
+    (Idade_1 == i56, Idade_2 == i45);
+    (Idade_2 == i56, Idade_3 == i45);
+    (Idade_3 == i56, Idade_4 == i45);
+    (Idade_4 == i56, Idade_5 == i45)
+    ),
+    
+    %O prédio projetado pelo arquiteto mais velho está em algum lugar à direita do prédio que tem detalhes em Azul
+    (
+    (Detalhes_1 == azul, (Idade_2 == i56 ; Idade_3 == i56 ; Idade_4 == i56 ; Idade_5 == i56));
+    (Detalhes_2 == azul, (Idade_3 == i56 ; Idade_4 == i56 ; Idade_5 == i56));
+    (Detalhes_3 == azul, (Idade_4 == i56 ; Idade_5 == i56));
+    (Detalhes_4 == azul, (Idade_5 == i56))
+    ),
+    
+    alldifferent([Idade_1, Idade_2, Idade_3, Idade_4, Idade_5]),
+    
+    %Vendido
+    vendido(Vendido_1),
+    vendido(Vendido_2),
+    vendido(Vendido_3),
+    vendido(Vendido_4),
+    vendido(Vendido_5),
+    
+    %O prédio menos vendido está na quinta posição
+    (Vendido_5 == pcg50),
+    
+    %O bloco do arquiteto de 50 anos está ao lado do que já vendeu 70%
+    (
+    (Idade_1 == i50, Vendido_2 == pcg70);
+    (Idade_2 == i50, (Vendido_1 == pcg70 ; Vendido_3 == pcg70));
+    (Idade_3 == i50, (Vendido_2 == pcg70 ; Vendido_4 == pcg70));
+    (Idade_4 == i50, (Vendido_3 == pcg70 ; Vendido_5 == pcg70));
+    (Idade_5 == i50, Vendido_4 == pcg70)
+    ),
+    
+    %O prédio mais vendido está exatamente à esquerda do bloco Watt
+    (
+    (Vendido_1 == pcg90, Nome_bloco_2 == watt);
+    (Vendido_2 == pcg90, Nome_bloco_3 == watt);
+    (Vendido_3 == pcg90, Nome_bloco_4 == watt);
+    (Vendido_4 == pcg90, Nome_bloco_5 == watt)
+    ),
+    
+    alldifferent([Vendido_1, Vendido_2, Vendido_3, Vendido_4, Vendido_5]),
+    
+    %Tem
+    tem(Tem_1),
+    tem(Tem_2),
+    tem(Tem_3),
+    tem(Tem_4),
+    tem(Tem_5),
+    
+    %O bloco que tem Salão de Festa está em uma das pontas
+    (
+    (Tem_1 == salaofestas);
+    (Tem_5 == salaofestas)
+    ),
+    
+    %O bloco que tem Academia está ao lado do que tem 50% das unidades vendidas
+    (
+    (Tem_1 == academia, Vendido_2 == pcg50);
+    (Tem_2 == academia, (Vendido_1 == pcg50 ; Vendido_3 == pcg50));
+    (Tem_3 == academia, (Vendido_2 == pcg50 ; Vendido_4 == pcg50));
+    (Tem_4 == academia, (Vendido_3 == pcg50 ; Vendido_5 == pcg50));
+    (Tem_5 == academia, Vendido_4 == pcg50)
+    ),
+    
+    %O arquiteto mais novo é responsável pelo bloco vizinho ao que tem Piscina
+    (
+    (Idade_1 == i45, Tem_2 == piscina);
+    (Idade_2 == i45, (Tem_1 == piscina ; Tem_3 == piscina));
+    (Idade_3 == i45, (Tem_2 == piscina ; Tem_4 == piscina));
+    (Idade_4 == i45, (Tem_3 == piscina ; Tem_5 == piscina));
+    (Idade_5 == i45, Tem_4 == piscina)
+    ),
+    
+    %O bloco Watt fica ao lado do que possui churrasqueira.
+    (
+    (Nome_bloco_1 == watt, Tem_2 == churrasqueira);
+    (Nome_bloco_2 == watt, (Tem_1 == churrasqueira ; Tem_3 == churrasqueira));
+    (Nome_bloco_3 == watt, (Tem_2 == churrasqueira ; Tem_4 == churrasqueira));
+    (Nome_bloco_4 == watt, (Tem_3 == churrasqueira ; Tem_5 == churrasqueira));
+    (Nome_bloco_5 == watt, Tem_4 == churrasqueira)
+    ),
+    
+    %Os prédios com detalhes em Amarelo e com Piscina são vizinhos
+    (
+    (Detalhes_1 == amarelo, Tem_2 == piscina);
+    (Detalhes_2 == amarelo, (Tem_1 == piscina ; Tem_3 == piscina));
+    (Detalhes_3 == amarelo, (Tem_2 == piscina ; Tem_4 == piscina));
+    (Detalhes_4 == amarelo, (Tem_3 == piscina ; Tem_5 == piscina));
+    (Detalhes_5 == amarelo, Tem_4 == piscina)
+    ),
+    
+    %O bloco com detalhes em Azul fica ao lado do que tem Piscina
+    (
+    (Detalhes_1 == azul, Tem_2 == piscina);
+    (Detalhes_2 == azul, (Tem_1 == piscina ; Tem_3 == piscina));
+    (Detalhes_3 == azul, (Tem_2 == piscina ; Tem_4 == piscina));
+    (Detalhes_4 == azul, (Tem_3 == piscina ; Tem_5 == piscina));
+    (Detalhes_5 == azul, Tem_4 == piscina)
+    ),
+    
+    %O bloco com Piscina tem 70% das unidades vendidas
+    (
+    (Tem_1 == piscina, Vendido_1 == pcg70);
+    (Tem_2 == piscina, Vendido_2 == pcg70);
+    (Tem_3 == piscina, Vendido_3 == pcg70);
+    (Tem_4 == piscina, Vendido_4 == pcg70);
+    (Tem_5 == piscina, Vendido_5 == pcg70)
+    ),
+    
+    %O prédio com Academia tem 80% das suas unidades vendidas
+    (
+    (Tem_1 == academia, Vendido_1 == pcg80);
+    (Tem_2 == academia, Vendido_2 == pcg80);
+    (Tem_3 == academia, Vendido_3 == pcg80);
+    (Tem_4 == academia, Vendido_4 == pcg80);
+    (Tem_5 == academia, Vendido_5 == pcg80)
+    ),
+    
+    %O bloco com Churrasqueira está sendo projetado pelo arquiteto de 47 anos
+    (
+    (Tem_1 == churrasqueira, Idade_1 == i47);
+    (Tem_2 == churrasqueira, Idade_2 == i47);
+    (Tem_3 == churrasqueira, Idade_3 == i47);
+    (Tem_4 == churrasqueira, Idade_4 == i47);
+    (Tem_5 == churrasqueira, Idade_5 == i47)
+    ),
+    
+    alldifferent([Tem_1, Tem_2, Tem_3, Tem_4, Tem_5]).
+
+%Nome dos Blocos
+nome_bloco(gauss).
+nome_bloco(newton).
+nome_bloco(pascal).
+nome_bloco(tesla).
+nome_bloco(watt).
+    
+%Detalhes
+detalhes(amarelo).
+detalhes(azul).
+detalhes(branco).
+detalhes(verde).
+detalhes(vermelho).
+
+%Arquiteto
+arquiteto(alberto).
+arquiteto(eduardo).
+arquiteto(fabio).
+arquiteto(sergio).
+arquiteto(willian).
+
+%Idade
+idade(i45).
+idade(i47).
+idade(i50).
+idade(i51).
+idade(i56).
+    
+%Vendido
+vendido(pcg50).
+vendido(pcg60).
+vendido(pcg70).
+vendido(pcg80).
+vendido(pcg90).
+
+%Tem
+tem(academia).
+tem(churrasqueira).
+tem(piscina).
+tem(salaofestas).
+tem(salaojogos).
+
+%Alldifferent
+alldifferent([]).
+alldifferent([H|T]) :-
+    not(member(H,T)),
+    alldifferent(T).
+
+%Imprime lista
+imprime_lista([]) :- 
+    write(' ++++++++++++++++++++++++++++++++++ '), 
+    write(' Finalizando a impressao ').
+imprime_lista([H|T]) :-
+    write(' ++++++++++++++++++++++++++++++++++ '), 
+    write(' Informações do bloco: '),
+    write(H),
+    imprime_lista(T).
