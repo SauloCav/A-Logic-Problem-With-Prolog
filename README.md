@@ -1,4 +1,5 @@
-# Problema-de-Logica-com-Prolog
-Um problema de lógica resolvido utilizando a linguagem Prolog
+# A-Logic-Problem-With-Prolog
+
+A logic problem solved using the Prolog language
 
 Trabalho desenvolvido na disciplina de Lógica para Computação
