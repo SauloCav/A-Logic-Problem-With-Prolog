@@ -31,13 +31,12 @@ Dados:<br/>
 • Os prédios com detalhes em Amarelo e com Piscina são vizinhos.<br/>
 • O bloco Gauss está em uma das pontas.<br/>
 
-<strong>A consulta deve retornar a configuração completa de cada bloco: nome, detalhes, arquiteto, idade, vendido, tem:</strong>
+<strong>A consulta deve retornar a configuração completa de cada bloco: nome, detalhes, arquiteto, idade, vendido, tem:</strong><br/>
 <strong>Para cada um dos itens citados existem as 5 seguintes opções:</strong>
 
-Nome do bloco = Gauss, Newton, Pascal, Tesla, Watt
-Detalhes = Amarelo, Azul, Branco, Verde, Vermelho
-Arquiteto = Alberto, Eduardo, Fabio, Sérgio, William
-Idade = 45, 47, 50, 51, 56
-Vendido = 50%, 60%, 70%, 80%, 90%
+Nome do bloco = Gauss, Newton, Pascal, Tesla, Watt<br/>
+Detalhes = Amarelo, Azul, Branco, Verde, Vermelho<br/>
+Arquiteto = Alberto, Eduardo, Fabio, Sérgio, William<br/>
+Idade = 45, 47, 50, 51, 56<br/>
+Vendido = 50%, 60%, 70%, 80%, 90%<br/>
 Tem = Academia, Churrasqueira, Piscina, Salão de festa, Salão de jogos
-  
