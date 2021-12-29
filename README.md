@@ -40,3 +40,6 @@ Arquiteto = Alberto, Eduardo, Fabio, Sérgio, William<br/>
 Idade = 45, 47, 50, 51, 56<br/>
 Vendido = 50%, 60%, 70%, 80%, 90%<br/>
 Tem = Academia, Churrasqueira, Piscina, Salão de festa, Salão de jogos
+
+<strong>Resultados:</strong><br/>
+![image](https://user-images.githubusercontent.com/61660671/147661724-3bcfe39c-3fb7-44e2-a1a3-8b559042ae6a.png)
