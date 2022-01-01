@@ -43,3 +43,4 @@ Tem = Academia, Churrasqueira, Piscina, Salão de festa, Salão de jogos
 
 <strong>Resultados:</strong><br/>
 ![image](https://user-images.githubusercontent.com/61660671/147661724-3bcfe39c-3fb7-44e2-a1a3-8b559042ae6a.png)
+<strong>Feito em: https://swish.swi-prolog.org/</strong><br/>
