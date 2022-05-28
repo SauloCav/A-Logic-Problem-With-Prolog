@@ -1,4 +1,4 @@
-# A-Logic-Problem-With-Prolog
+# A Logic Problem With Prolog
 
 Proposta da Atividade:
 
