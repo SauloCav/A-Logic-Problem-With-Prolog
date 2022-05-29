@@ -1,10 +1,8 @@
 # A Logic Problem With Prolog
 
-Proposta da Atividade:
+<strong>Activity Proposal:</strong>
 
-<strong>O problema deve ser resolvido na linguagem Prolog</strong>
-
-O residencial Cientistas Famosos está sendo construído numa grande cidade brasileira. Ele e composto de cinco blocos (com nomes de cientistas e dispostos lado a lado) e cada um deles é projetado por um arquiteto. Além disso, cada prédio tem uma área de lazer diferente. Descubra as características dos cinco prédios e dos seus respectivos arquitetos do residencial Cientistas Famosos.
+The famous scientists residential project is being built in a large Brazilian city. It is made up of five blocks (named after scientists and arranged side by side) and each one is designed by an architect. In addition, each building has a different leisure area. Discover the characteristics of the five buildings and their respective architects at the Cientistas Famosos residential building.
 
 Dados:<br/>
 • O bloco que tem Salão de Festa está em uma das pontas.<br/>
@@ -43,6 +41,6 @@ Tem = Academia, Churrasqueira, Piscina, Salão de festa, Salão de jogos
 
 <strong>Results:</strong><br/>
 
-<p align="center">![image](https://user-images.githubusercontent.com/61660671/147661724-3bcfe39c-3fb7-44e2-a1a3-8b559042ae6a.png) <br/></p>
+![image](https://user-images.githubusercontent.com/61660671/147661724-3bcfe39c-3fb7-44e2-a1a3-8b559042ae6a.png) <br/>
 
 <br/><strong>Made in: https://swish.swi-prolog.org/</strong><br/>
