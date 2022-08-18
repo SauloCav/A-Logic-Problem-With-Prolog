@@ -30,17 +30,17 @@ The famous scientists residential project is being built in a large Brazilian ci
 • Os prédios com detalhes em Amarelo e com Piscina são vizinhos.<br/>
 • O bloco Gauss está em uma das pontas.<br/>
 
-<strong>A consulta deve retornar a configuração completa de cada bloco: nome, detalhes, arquiteto, idade, vendido, tem.</strong><br/>
+### A consulta deve retornar a configuração completa de cada bloco: nome, detalhes, arquiteto, idade, vendido, tem.
 
-<strong>Para cada um dos itens citados existem as 5 seguintes opções:</strong><br/>
-Nome do bloco = Gauss, Newton, Pascal, Tesla, Watt<br/>
-Detalhes = Amarelo, Azul, Branco, Verde, Vermelho<br/>
-Arquiteto = Alberto, Eduardo, Fabio, Sérgio, William<br/>
-Idade = 45, 47, 50, 51, 56<br/>
-Vendido = 50%, 60%, 70%, 80%, 90%<br/>
-Tem = Academia, Churrasqueira, Piscina, Salão de festa, Salão de jogos
+## Para cada um dos itens citados existem as 5 seguintes opções:
+Block name = Gauss, Newton, Pascal, Tesla, Watt<br/>
+Details = Yellow, Blue, White, Green, Red<br/>
+Architect = Alberto, Eduardo, Fabio, Sérgio, William<br/>
+Age = 45, 47, 50, 51, 56<br/>
+Sold = 50%, 60%, 70%, 80%, 90%<br/>
+Has = Gym, Barbecue, Swimming pool, Ballroom, Games Room
 
-<strong>Results:</strong><br/>
+## Results:
 
 ![image](https://user-images.githubusercontent.com/61660671/147661724-3bcfe39c-3fb7-44e2-a1a3-8b559042ae6a.png) <br/>
 
