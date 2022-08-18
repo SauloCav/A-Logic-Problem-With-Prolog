@@ -19,16 +19,16 @@ The famous scientists residential project is being built in a large Brazilian ci
 • The block with details in Blue is next to the one with the Piscina.<br/>
 • The Newton block is next to the block designed by Sérgio.<br/>
 • William is working on the fifth building.<br/>
-• Na terceira posição está o bloco Tesla.<br/>
-• O prédio menos vendido está na quinta posição.<br/>
-• O bloco Tesla está exatamente a esquerda do bloco Pascal.<br/>
-• O bloco Gauss está em algum lugar a direita do prédio que tem detalhes em Vermelho.<br/>
-• O prédio com Academia tem 80% das suas unidades vendidas.<br/>
-• O bloco com Churrasqueira está sendo projetado pelo arquiteto de 47 anos.<br/>
-• O prédio projetado pelo arquiteto mais velho está em algum lugar a direita do prédio que tem detalhes em Azul.<br/>
-• O bloco que possui detalhes em Branco está exatamente a esquerda do que e projetado pelo Eduardo.<br/>
-• Os prédios com detalhes em Amarelo e com Piscina são vizinhos.<br/>
-• O bloco Gauss está em uma das pontas.<br/>
+• In the third position is the Tesla block.<br/>
+• The least sold building is in fifth position.<br/>
+• The Tesla block is exactly to the left of the Pascal block.<br/>
+• The Gauss block is somewhere to the right of the building that has red accents.<br/>
+• The building with the Gym has 80% of its units sold.<br/>
+• The block with Barbecue is being designed by the 47-year-old architect.<br/>
+• The building designed by the older architect is somewhere to the right of the building that has blue accents.<br/>
+• The block that has details in White is exactly to the left of the one designed by Eduardo.<br/>
+• The buildings with details in Yellow and with a Pool are neighbors.<br/>
+• The Gauss block is at one end.<br/>
 
 ### The query should return the complete configuration of each block: name, details, architect, age, sold, has.
 
