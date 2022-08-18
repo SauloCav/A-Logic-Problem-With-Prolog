@@ -13,12 +13,12 @@ The famous scientists residential project is being built in a large Brazilian ci
 • The 56-year-old architect's building is exactly to the left of the 45-year-old architect's building.<br/>
 • The 50-year-old architect's block is next to the one that has already sold 70%.<br/>
 • The Watt block is next to the one with a barbecue.<br/>
-• O prédio mais vendido está exatamente a esquerda do bloco Watt.<br/>
-• O arquiteto de 51 anos está trabalhando no bloco de uma das pontas.<br/>
-• Fabio e o responsável pelo projeto do prédio com detalhes em Branco.<br/>
-• O bloco com detalhes em Azul está ao lado do que tem Piscina.<br/>
-• O bloco Newton está ao lado do bloco projetado por Sérgio.<br/>
-• Willian está trabalhando no quinto prédio.<br/>
+• The best selling building is exactly to the left of the Watt block.<br/>
+• The 51-year-old architect is working on the block at one end.<br/>
+• Fabio is responsible for the design of the building with details in White.<br/>
+• The block with details in Blue is next to the one with the Piscina.<br/>
+• The Newton block is next to the block designed by Sérgio.<br/>
+• William is working on the fifth building.<br/>
 • Na terceira posição está o bloco Tesla.<br/>
 • O prédio menos vendido está na quinta posição.<br/>
 • O bloco Tesla está exatamente a esquerda do bloco Pascal.<br/>
@@ -30,9 +30,9 @@ The famous scientists residential project is being built in a large Brazilian ci
 • Os prédios com detalhes em Amarelo e com Piscina são vizinhos.<br/>
 • O bloco Gauss está em uma das pontas.<br/>
 
-### A consulta deve retornar a configuração completa de cada bloco: nome, detalhes, arquiteto, idade, vendido, tem.
+### The query should return the complete configuration of each block: name, details, architect, age, sold, has.
 
-## Para cada um dos itens citados existem as 5 seguintes opções:
+## For each of the items mentioned there are the following 5 options:
 Block name = Gauss, Newton, Pascal, Tesla, Watt<br/>
 Details = Yellow, Blue, White, Green, Red<br/>
 Architect = Alberto, Eduardo, Fabio, Sérgio, William<br/>
