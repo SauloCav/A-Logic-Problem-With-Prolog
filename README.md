@@ -1,17 +1,18 @@
 # A Logic Problem With Prolog
 
-<strong>Activity Proposal:</strong>
+## Activity Proposal:
 
 The famous scientists residential project is being built in a large Brazilian city. It is made up of five blocks (named after scientists and arranged side by side) and each one is designed by an architect. In addition, each building has a different leisure area. Discover the characteristics of the five buildings and their respective architects at the Cientistas Famosos residential building.
 
-Dados:<br/>
-• O bloco que tem Salão de Festa está em uma das pontas.<br/>
-• O bloco que tem Academia está ao lado do que tem 50% das unidades vendidas.<br/>
-• O arquiteto mais novo e responsável pelo bloco vizinho ao que tem Piscina.<br/>
-• O bloco com Piscina tem 70% das unidades vendidas.<br/>
-• O prédio do arquiteto de 56 anos está exatamente a esquerda do prédio do arquiteto de 45 anos.<br/>
-• O bloco do arquiteto de 50 anos está ao lado do que ja vendeu 70%.<br/>
-• O bloco Watt está ao lado do que possui churrasqueira.<br/>
+
+## Data:
+• The block with the Party Room is at one end.<br/>
+• The block that has an Academy is next to the one that has 50% of the units sold.<br/>
+• The youngest architect and responsible for the block next to the one with the swimming pool.<br/>
+• The pool block has 70% of the units sold.<br/>
+• The 56-year-old architect's building is exactly to the left of the 45-year-old architect's building.<br/>
+• The 50-year-old architect's block is next to the one that has already sold 70%.<br/>
+• The Watt block is next to the one with a barbecue.<br/>
 • O prédio mais vendido está exatamente a esquerda do bloco Watt.<br/>
 • O arquiteto de 51 anos está trabalhando no bloco de uma das pontas.<br/>
 • Fabio e o responsável pelo projeto do prédio com detalhes em Branco.<br/>
